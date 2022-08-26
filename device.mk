@@ -288,8 +288,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libminijail \
     libminijail.vendor \
-    libavservices_minijail \
-    libavservices_minijail.vendor
+    libavservices_minijail
 
 # Netutils
 PRODUCT_PACKAGES += \
@@ -377,6 +376,7 @@ TARGET_BOARD_PLATFORM := $(TRINKET)
 
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
+    av \
     bt \
     perf \
     vibrator
