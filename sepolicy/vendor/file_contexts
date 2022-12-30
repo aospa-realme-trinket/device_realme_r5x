@@ -4,6 +4,9 @@
 # EGIS Fingerprint device
 /dev/esfp0  u:object_r:egis_device:s0  
 
+# BT Firmware
+/bt_firmware(/.*)?        u:object_r:vendor_firmware_file:s0
+
 # Biometrics
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.r5x    u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.oppo\.hardware\.biometrics\.fingerprint@2\.1-service              u:object_r:hal_fingerprint_default_exec:s0
@@ -41,6 +44,9 @@
 /sys/devices/platform/soc/soc:fpc_fpc1020/irq                   u:object_r:sysfs_hal_fingerprint_default:s0
 /sys/devices/platform/soc/soc:fpc_fpc1020/irq_enable            u:object_r:sysfs_hal_fingerprint_default:s0
 /sys/devices/platform/soc/soc:fpc_fpc1020/wakelock_enable       u:object_r:sysfs_hal_fingerprint_default:s0
+
+# Firmware
+/firmware(/.*)?        u:object_r:firmware_file:s0
 
 # mdmreason device
 /dev/mdmreason             u:object_r:mdmreason_device:s0
