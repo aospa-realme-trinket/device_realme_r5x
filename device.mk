@@ -8,10 +8,7 @@ OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    vendor/qcom/opensource/commonsys-intf/display \
-    vendor/qcom/opensource/wfd-commonsys \
-    vendor/nxp/opensource/pn5xx
+    $(LOCAL_PATH)
 
 # ANT+
 PRODUCT_PACKAGES += \
