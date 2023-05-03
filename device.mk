@@ -343,10 +343,6 @@ PRODUCT_PACKAGES += \
     TetheringConfigOverlayR5x \
     ApertureOverlay
 
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti
-
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat \
