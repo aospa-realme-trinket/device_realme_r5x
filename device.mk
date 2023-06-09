@@ -115,8 +115,7 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     gralloc.trinket \
     hwcomposer.trinket \
-    libdisplayconfig \
-    libdisplayconfig.vendor \
+    libdisplayconfig.system.qti \
     libdisplayconfig.qti \
     libtinyxml \
     libtinyxml2 \
