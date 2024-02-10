@@ -1,3 +1,6 @@
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # LMKD
 ro.config.low_ram=false
 ro.lmk.kill_timeout_ms=50
