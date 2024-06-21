@@ -491,4 +491,98 @@
         <instance>imsrtpservice</instance>
     </interface>
 </hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.radio</name>
+    <version>1.0-2</version>
+    <interface>
+        <name>ISap</name>
+        <instance>slot2</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>vendor.aospa.power</name>
+    <interface>
+        <name>IPowerFeature</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.qti.hardware.iop</name>
+    <version>2.0</version>
+    <interface>
+        <name>IIop</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>vendor.qti.hardware.perf2</name>
+    <interface>
+        <name>IPerf</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.qti.hardware.perf</name>
+    <version>2.0-2</version>
+    <interface>
+        <name>IPerf</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>vendor.qti.hardware.power.powermodule</name>
+    <interface>
+        <name>IPowerModule</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>vendor.qti.hardware.servicetrackeraidl</name>
+    <interface>
+        <name>IServicetracker</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>vendor.qti.hardware.wifi.supplicant</name>
+    <interface>
+        <name>ISupplicantVendor</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.qti.hardware.wifidisplaysession</name>
+    <version>1.0</version>
+    <interface>
+        <name>IWifiDisplaySession</name>
+        <instance>wifidisplaysession</instance>
+    </interface>
+    <interface>
+        <name>IWifiDisplaySessionAudioTrack</name>
+        <instance>wifidisplaysessionaudiotrack</instance>
+    </interface>
+    <interface>
+        <name>IWifiDisplaySessionImageTrack</name>
+        <instance>wifidisplaysessionimagetrack</instance>
+    </interface>
+    <interface>
+        <name>IWifiDisplaySessionVideoTrack</name>
+        <instance>wifidisplaysessionvideotrack</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.qti.power.pasrmanager</name>
+    <version>1.0</version>
+    <interface>
+        <name>IPasrManager</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>vendor.qti.qspmhal</name>
+    <interface>
+        <name>IQspmhal</name>
+        <instance>default</instance>
+    </interface>
+</hal>
 </compatibility-matrix>
