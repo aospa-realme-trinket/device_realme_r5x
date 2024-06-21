@@ -367,6 +367,7 @@ TARGET_BOARD_PLATFORM := $(TRINKET)
 
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
+    alarm \
     av \
     bt \
     perf \
