@@ -59,17 +59,21 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    audio.bluetooth.default \
-    android.hardware.bluetooth@1.0.vendor \
-    android.hardware.bluetooth.audio-impl \
-    libldacBT_bco \
-    vendor.qti.hardware.bluetooth_audio@2.1.vendor \
-    vendor.qti.hardware.btconfigstore@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@2.0.vendor
+    libbluetooth_audio_session
 
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml \
-    frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=false \
+    persist.vendor.qcom.bluetooth.enable.splita2dp=true \
+    persist.vendor.qcom.bluetooth.scram.enabled=true \
+    persist.vendor.qcom.bluetooth.soc=cherokee \
+    persist.vendor.qcom.bluetooth.twsp_state.enabled=false \
+    persist.vendor.bluetooth.modem_nv_support=true \
+    ro.vendor.bluetooth.wipower=false \
+    vendor.qcom.bluetooth.soc=cherokee
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.bluetooth.bqr.event_mask=14 \
+    persist.bluetooth.bqr.min_interval_ms=500
 
 # Binder
 PRODUCT_PACKAGES += \
@@ -343,7 +347,6 @@ PRODUCT_PACKAGES += \
     WifiOverlayR5x \
     FrameworksOverlayR5x \
     TetheringConfigOverlayR5x \
-    BluetoothOverlayR5x \
     ApertureOverlay
 
 # Power
@@ -374,6 +377,7 @@ TARGET_BOARD_PLATFORM := $(TRINKET)
 
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
+    bt \
     perf
 
 PRODUCT_COPY_FILES += \
