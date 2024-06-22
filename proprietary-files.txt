@@ -2548,6 +2548,7 @@ vendor/lib/vendor.oppo.hardware.radio.opporadio@1.0.so
 vendor/lib64/vendor.oppo.hardware.radio.opporadio@1.0.so
 
 # Radio (IMS)
+system_ext/framework/qti-telephony-common.jar|bb3ab85fcc841cb41e7f7c911eecf4de110d09b9
 etc/permissions/com.qualcomm.qti.imscmservice.xml
 product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml
 product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml
