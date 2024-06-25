@@ -67,9 +67,6 @@ TARGET_USES_ION := true
 USE_OPENGL_RENDERER := true
 TARGET_SCREEN_DENSITY := 320
 
-# Filesystem
-TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/fs/config.fs
-
 # FM
 BOARD_HAVE_QCOM_FM := true
 BOARD_HAS_QCA_FM_SOC := cherokee
