@@ -111,7 +111,8 @@ BOARD_KERNEL_CMDLINE := \
       androidboot.init_fatal_reboot_target=recovery \
       kpti=off \
       androidboot.boot_devices=soc/4744000.sdhci \
-      androidboot.android_dt_dir=/non-existent
+      androidboot.android_dt_dir=/non-existent \
+      nosdcardfs
 
 # Kernel (Prebuilt)
 TARGET_FORCE_PREBUILT_KERNEL := true
