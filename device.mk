@@ -371,6 +371,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.mock
 
+# Update
+PRODUCT_SOONG_NAMESPACES += bootable/deprecated-ota
+
 # VNDK
 BOARD_SHIPPING_API_LEVEL := 30
 
