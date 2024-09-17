@@ -64,7 +64,6 @@ TARGET_USES_ION := true
 TARGET_SCREEN_DENSITY := 320
 
 # FM
-BOARD_HAVE_QCOM_FM := true
 BOARD_HAS_QCA_FM_SOC := cherokee
 
 # HIDL
@@ -161,9 +160,9 @@ TARGET_BOARD_PLATFORM := trinket
 
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/props/system.prop
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/props/product.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/props/vendor.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/props/product.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
