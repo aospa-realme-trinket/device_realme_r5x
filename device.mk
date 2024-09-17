@@ -218,10 +218,6 @@ PRODUCT_VENDOR_KERNEL_HEADERS := device/realme/r5x-kernel/kernel-headers
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
 
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.lights-service.r5x
-
 # Media
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-impl \
