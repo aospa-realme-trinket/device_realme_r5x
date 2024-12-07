@@ -63,10 +63,6 @@ SOONG_CONFIG_rmnetctl_old_rmnet_data := true
 TARGET_USES_ION := true
 TARGET_SCREEN_DENSITY := 320
 
-# GPS
-BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
-LOC_HIDL_VERSION := 4.0
-
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifests/manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/manifests/framework_compatibility_matrix.xml
